@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -23,6 +19,8 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
+        <v-btn> <router-link to="/">Home</router-link> </v-btn>
+        <v-btn flat to="/about">About</v-btn>
       </div>
 
       <v-spacer></v-spacer>
@@ -38,19 +36,20 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <!-- <HelloWorld/> -->
+      <router-view />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    // HelloWorld,
   },
 
   data: () => ({

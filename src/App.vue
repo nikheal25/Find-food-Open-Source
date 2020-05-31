@@ -19,7 +19,7 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
-        <v-btn> <router-link to="/">Home</router-link> </v-btn>
+        <v-btn flat to="/"> Home </v-btn>
         <v-btn flat to="/about">About</v-btn>
       </div>
 

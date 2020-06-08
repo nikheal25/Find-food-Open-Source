@@ -1,7 +1,7 @@
 <template>
   <v-app
     id="inspire"
-    :style="{height: '100vh', backgroundImage: `url(${require('@/assets/login.jpg')})`}"
+    :style="{backgroundImage: `url(${require('@/assets/login.jpg')})`,width: '100%', height: '100%',}"
   >
     <v-content>
       <v-container class="fill-height" fluid>
@@ -55,8 +55,8 @@ export default {
 
 <style scoped>
 #inspire {
-  background-position: "center";
+  /* background-position: "center";
   background-repeat: "no-repeat";
-  background-size: "cover";
+  background-size: "cover"; */
 }
 </style>

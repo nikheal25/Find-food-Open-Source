@@ -19,20 +19,13 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
-        <v-btn flat to="/"> Home </v-btn>
+        <v-btn flat to="/">Home</v-btn>
         <v-btn flat to="/about">About</v-btn>
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <!-- <span class="mr-2">Latest Release</span> -->
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <v-btn flat to="/register">Register</v-btn>
     </v-app-bar>
 
     <v-content>
@@ -54,6 +47,6 @@ export default {
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>

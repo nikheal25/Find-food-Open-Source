@@ -26,6 +26,7 @@
       <v-spacer></v-spacer>
 
       <v-btn flat to="/register">Register</v-btn>
+      <v-btn flat to="/login">Log In</v-btn>
     </v-app-bar>
 
     <v-content>

@@ -10,13 +10,7 @@ class PostService {
         .get(url)
         .then((res) => {
           const data = res.data;
-          console.log(`data received - ${data}`);
-          resolve(
-            data.map((post) => ({
-              ...post,
-              createdAt: new Date(post.createdAt),
-            }))
-          );
+          resolve(data);
         })
         .catch((error) => {
           console.log("Error POST request");

@@ -8,14 +8,7 @@
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">Welcome to Job Crawler</h1>
 
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
+        <p class="subheading font-weight-regular">{{this.posts}}</p>
       </v-col>
 
       <v-col class="mb-5" cols="12">
@@ -122,11 +115,9 @@ export default {
     ]
   }),
   async created() {
-    console.log("inside");
-
     try {
       this.posts = await PostService.getPosts();
-      console.log(this.posts);
+      console.log(`data rece - ${this.posts}`);
     } catch (err) {
       console.log(err);
     }

@@ -19,14 +19,14 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
-        <v-btn flat to="/">Home</v-btn>
-        <v-btn flat to="/about">About</v-btn>
+        <v-btn text to="/">Home</v-btn>
+        <v-btn text to="/about">About</v-btn>
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn flat to="/register">Register</v-btn>
-      <v-btn flat to="/login">Log In</v-btn>
+      <v-btn text to="/register">Register</v-btn>
+      <v-btn text to="/login">Log In</v-btn>
     </v-app-bar>
 
     <v-content>

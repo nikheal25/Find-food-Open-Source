@@ -29,6 +29,11 @@ const routes = [
     name: "Login",
     component: () => import("../views/Login.vue"),
   },
+  {
+    path: "/Job_Board",
+    name: "Job Board",
+    component: () => import("../views/JobBoard.vue"),
+  },
 ];
 
 const router = new VueRouter({

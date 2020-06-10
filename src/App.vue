@@ -20,6 +20,7 @@
           width="100"
         />
         <v-btn text to="/">Home</v-btn>
+        <v-btn text to="/Job_Board">Job Board</v-btn>
         <v-btn text to="/about">About</v-btn>
       </div>
 

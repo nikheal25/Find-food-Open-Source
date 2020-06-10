@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "";
+const url = "http://localhost:3000/api/posts";
 
 class PostService {
   // * GET
@@ -10,6 +10,7 @@ class PostService {
         .get(url)
         .then((res) => {
           const data = res.data;
+          console.log(`data received - ${data}`);
           resolve(
             data.map((post) => ({
               ...post,
@@ -18,6 +19,7 @@ class PostService {
           );
         })
         .catch((error) => {
+          console.log("Error POST request");
           reject(error);
         });
     });

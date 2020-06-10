@@ -64,10 +64,12 @@
 </template>
 
 <script>
+import PostService from "../PostService";
 export default {
   name: "HelloWorld",
 
   data: () => ({
+    posts: [],
     ecosystem: [
       {
         text: "vuetify-loader",
@@ -118,6 +120,16 @@ export default {
         href: "https://vuetifyjs.com/getting-started/frequently-asked-questions"
       }
     ]
-  })
+  }),
+  async created() {
+    console.log("inside");
+
+    try {
+      this.posts = await PostService.getPosts();
+      console.log(this.posts);
+    } catch (err) {
+      console.log(err);
+    }
+  }
 };
 </script>

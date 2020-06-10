@@ -53,7 +53,14 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
+  methods: {
+    submit() {
+      axios.put("");
+    }
+  },
   props: {
     source: String
   }
